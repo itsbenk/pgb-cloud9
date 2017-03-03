@@ -1,0 +1,57 @@
+<h1 align=center>javascript by ben</h1>
+
+Put the stuff in the textarea into the div<br><br>
+
+<textarea id="myArea01">enter stuff here</textarea><br><br>
+
+<input type=button value="click me" onclick="{
+ 
+ document.getElementById('myDiv01').innerHTML = 
+     document.getElementById('myArea01').value
+    
+}"><br><br>
+
+<div id="myDiv01">Output here</div>
+
+<script type="text/javascript">
+function onoff(){
+  currentvalue = document.getElementById('onoff').value;
+  if(currentvalue == "Off"){
+    document.getElementById("onoff").value="On";
+  }else{
+    document.getElementById("onoff").value="Off";
+  }
+}
+</script>
+
+<input type="button" value="On" id="onoff" onclick="onoff();"><br><br>
+
+    <style>
+ body {  background-image: url(https://cdn.arstechnica.net/wp-content/uploads/2014/04/garrus-640x215.jpg); } 
+      </style>   
+    
+    <style type="text/css">
+.show{display:block;}
+.hide{display:none;}
+</style>
+<script type="text/javascript">
+function showImg()
+{
+var obj=document.getElementById('Picture1');
+obj.className = 'show';
+}
+</script>
+
+
+
+<center>
+<img id="Picture1" src=http://i.imgur.com/rgKGDCq.gif" class="hide">
+<input type="button" onclick = "showImg()" value= "Picture1">
+</center>
+
+<style type="text/css">body,
+    a:hover {cursor: url(http://cur.cursors-4u.net/games/gam-14/gam1379.ani),
+        url(http://cur.cursors-4u.net/games/gam-14/gam1379.png),
+            progress !important;}</style>
+                <a href="http://www.cursors-4u.com/cursor/2011/11/11/halo-energy-sword-15.html" target="_blank" title="Halo Energy Sword">
+                    <img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Halo Energy Sword" style="position:absolute; top: 0px; right: 0px;" /></a>
